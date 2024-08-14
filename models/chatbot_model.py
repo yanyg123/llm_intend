@@ -92,8 +92,6 @@ class ChatbotModel:
             self.get_processor_for_scene(self.current_purpose)
             # 调用抽象类process方法
             return self.processors[self.current_purpose].process(user_input, None)
-        # 未命中场景时 直接接入基座大模型进行自由问答
-        return send_tongyiqwen_message(user_input, user_input)
         # return '未命中场景'
 
 
