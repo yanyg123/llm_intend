@@ -1,0 +1,69 @@
+{
+  "weather_query": {
+    "name": "问天气",
+    "description": "天气信息查询服务",
+    "example": "JSON：[{'name': 'date', 'desc': '查天气的具体日期。时间格式：yyyy-MM-dd', 'value': ''}]\n输入：我想要23年5月1日的天气\n答：{'name': 'date', 'value': '2023-05-01'}",
+    "parameters": [
+      {
+        "name": "date",
+        "desc": "查天气的具体日期。时间格式：yyyy-MM-dd",
+        "type": "string",
+        "required": true
+      },
+      {
+        "name": "location",
+        "desc": "查天气的城市或地点",
+        "type": "string",
+        "required": true
+      }
+    ]
+  },
+  "hotel_booking": {
+    "name": "订酒店",
+    "description": "订酒店的服务",
+    "parameters": [
+      {
+        "name": "入住地点",
+        "desc": "酒店的具体位置，可以是城市、地区等",
+        "type": "string",
+        "required": true
+      },
+      {
+        "name": "入住开始日期",
+        "desc": "入住酒店的开始日期，日期格式：yyyy-MM-dd",
+        "type": "string",
+        "required": true
+      },
+      {
+        "name": "入住结束日期",
+        "desc": "入住酒店的结束日期，日期格式：yyyy-MM-dd",
+        "type": "string",
+        "required": true
+      },
+      {
+        "name": "酒店档次",
+        "desc": "酒店的档次，如豪华、经济等",
+        "type": "string",
+        "required": true
+      }
+    ]
+  },
+  "fund_consultation": {
+    "name": "公积金咨询",
+    "description": "公积金咨询",
+    "parameters": [
+      {
+        "name": "事件",
+        "desc": "买房、租房、退休",
+        "type": "string",
+        "required": true
+      },
+      {
+        "name": "购买房屋类型",
+        "desc": "买房事件时需要 经济适用房、新房、二手房",
+        "type": "string",
+        "required": true
+      }
+    ]
+  }
+}
